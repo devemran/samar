@@ -29,6 +29,20 @@ p,li,span,a,button,input, textarea{
  	color: #fff;
  	margin-right: 10px;
  }
+ .g-btn {
+    padding: 12px 25px;
+    background-image: linear-gradient(80deg, #856BFE91, #613EFF);
+    border-radius: 0px 26px 1px 26px;
+    color: #fff !important;
+    transition: .5s;
+ }
+ .g-btn i{
+    margin-right: 10px;
+    font-size: 20px;
+ }
+ .g-btn:hover{
+    border-radius: 26px 0px 26px 0px;
+ }
 
  .badge{
  	background: #F3F0FF;
@@ -49,7 +63,7 @@ p,li,span,a,button,input, textarea{
 
  }
 
- .b-btn{
+ .b-btn {
  	padding: 10px 25px;
  	background: #896EFF;
  	border: none;
@@ -92,7 +106,7 @@ p,li,span,a,button,input, textarea{
  	width: 150px;
  }
  .header ul{
- 	margin-right: 0px;
+    justify-content: end;
  }
  .header ul li a{
  	color: #000;
@@ -1184,9 +1198,147 @@ img{
     text-align: center;
     color: #fff;
     font-size: 15px;
-
-
 }
 
 
 
+
+/*================================
+            About Page Css
+=================================*/
+ .header{
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 9999;
+    background-color: #fff;
+ }
+
+
+
+
+#about-bnr{
+    background-image: url(../img/bnr1.jpg);
+    width: 100%;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#about-bnr::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #896eff;
+        opacity: .8;
+
+
+}
+
+#about-bnr .b-text{
+    color: #fff;
+}
+
+#about-bnr .b-text h1{
+    font-weight: 700;
+    font-size: 50px;
+    padding-top: 200px;
+}
+#about-bnr .b-text p{
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.about-s{
+    padding: 80px 0;
+}
+.about-s .about-text ul li i{
+    color: #B3A1FF;
+    font-size: 22px;
+    margin-right: 5px;
+}
+.about-s .about-text ul li{
+    font-size: 14px;
+    margin-bottom: 10px;
+    color:  #1F2471;
+}
+.watch-us .watch-h-text h1{
+    color: #1F2471;
+    padding-bottom: 20px;
+}
+.watch-us .watch-h-text p{
+    color: #1F2471;
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+.watch-us .icon-brdr{
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 2px;
+    background: #fff;
+    color: #896EFF;
+    box-shadow:  0px 0px 9px 4px #F1F3F7;
+    text-align: center;
+    font-size: 38px;
+    transition: .3s;
+}
+
+.watch-us{
+    padding: 80px 0;
+}
+.watch-us .icon-brdr:hover{
+    color: #fff;
+    background: #896EFF;
+}
+
+.watch-us .icon-text{
+    margin-left: 10px;
+    color: #1F2471;
+}
+.watch-us .icon-text p{
+    font-size: 15px;
+    font-weight: 400;
+}
+.watch-us .watch-img img{
+    width: 95%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-left: 10px;
+    box-shadow: 0px 0px 9px 4px #F1F3F7;
+  
+}
+
+.watch-us .watch-img {
+      position: relative;
+}
+
+.watch-us .watch-img a {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 36px;
+    width: 85px;
+    height: 85px;
+    line-height: 85px;
+    text-align: center;
+    background: #896EFF;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.watch-us .watch-img a:hover{
+    color: #896EFF;
+    background: #fff;
+}
